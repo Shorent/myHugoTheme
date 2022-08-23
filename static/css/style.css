@@ -1,0 +1,53 @@
+
+:root {
+  --darkmode-color: white;
+  --darkmode-background-header: #2E2E38;
+  --darkmode-background-body: #373743;
+  --darkmode-accent-color: #FFA033;
+  
+}
+
+/* Elements {{{ */
+body {
+  background-color: var(--darkmode-background-body);
+  color: var(--darkmode-color);
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+}
+
+header { 
+  background-color: var(--darkmode-background-header);
+  font-size: 110%;
+  padding: 10px;
+}
+
+main {
+  margin: 0 100px;
+}
+
+/* }}} */
+
+/* Navbar {{{ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--darkmode-color);
+}
+
+.navbar-title a{
+  color: var(--darkmode-color);
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.navbar-links a{
+  
+}
+/* }}} */
