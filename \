@@ -1,7 +1,0 @@
-<header>
-  <nav class="navbar" role="navigation">
-    <div class="navbar-title navbar-left">
-      <a href="/">{{ .Site.Title }}</a>
-    </div>
-  </nav>
-</header> 
