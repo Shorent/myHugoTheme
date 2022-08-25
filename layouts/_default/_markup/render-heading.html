@@ -1,0 +1,12 @@
+{{ if eq .Level 1 }}
+  <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+  <hr>
+{{ else if eq .Level 2 }}
+  <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+  <hr>
+{{ else if eq .Level 3 }}
+  <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+  <hr>
+{{ else }}
+  <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+{{ end }}

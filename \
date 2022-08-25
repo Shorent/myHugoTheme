@@ -1,0 +1,7 @@
+{{ define "main" }} 
+  <div class="container col c9">
+    </div>
+  <div class="focus">
+    {{ .Content }}
+  </div>
+{{ end }}
