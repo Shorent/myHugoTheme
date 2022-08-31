@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" id="icon">
+<g stroke-linecap="square" stroke-width="10">
+<rect x="20" y="85" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+<rect x="20" y="20" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+<rect x="20" y="52.5" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+</g>
+</svg>

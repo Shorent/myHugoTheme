@@ -1,5 +1,6 @@
 /* Variables {{{ */
 :root {
+  /* Color Scheme */
   --foreground: #f8f8f2;
   --comment: #6272a4;
   --current-line: #44475a;
@@ -16,28 +17,70 @@
 /* }}} */
 
 /* Device sizes {{{ */
+.show-xs{
+  display: none;
+}
+@media(max-width: 500px){ 
+  .show-xs{
+    display: block;
+  }
+  .hide-xs{
+    display: none;
+  }
+}
 
 /* }}} */
 
 /* Elements {{{ */
-main {
-  margin: 2em auto !important;
-}
+
 /* }}} */
 
 /* Navbar {{{ */
-.nav-right {
-  text-align:right;
+
+.dropdown .icon {
+  fill: white;
+  width: 2em;
+  height: 2em;
 }
+
+.nav-right {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .content {
+  display: none;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  padding: 10px 0;
+}
+
+.dropdown:hover .content,
+.dropdown:focus .content{
+  display: flex;
+  flex-direction: column;
+  width: 12em;
+}
+
+.dropdown .content a {
+  padding: .5em 1em;
+  background-color: white;
+}
+
+.dropdown .content a:hover,
+.dropdown .content a:focus-within{
+  transition: 200ms;
+}
+
+
+
 /* }}} */
 
+/* Container {{{ */
 
-.focus h1{
-  text-align: center;
-  margin: 0;
-}
-
-.focus p{
-  text-align: left;
-  text-indent: 1em;
-}
+/* }}} */

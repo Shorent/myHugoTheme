@@ -1,13 +1,33 @@
 <nav class="nav" role="navigation">
-  <div class="container">
+  <div class="container gradient-background">
     <div class="nav-left col c6">
-      <a href="/" class="pagename current">{{ .Site.Title }}</a>
+      <a href="/" class="pagename current show-xs">{{ .Site.Params.title_abbr}}</a>
+      <a href="/" class="pagename current hide-xs">{{ .Site.Title }}</a>
     </div>
     <div class="nav-right col c6">
-      <a href="/about">About</a>
-      <a href="/blog">Blog</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
+      <div class="dropdown" tabindex="0">
+        <svg version="1.1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <g stroke-linecap="square" stroke-width="10">
+          <rect x="20" y="85" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+          <rect x="20" y="20" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+          <rect x="20" y="52.5" width="80" height="15" ry="7" style="paint-order:stroke markers fill"/>
+          </g>
+        </svg>
+        <div class="content">
+          <a class="" href="/about">About</a>
+          <a class="" href="/posts">Posts</a>
+          <a class="" href="/projects">Projects</a>
+          <a class="" href="/contact">Contact</a>
+          <a class="" href="/websites">Other Websites</a>
+        </div>
+      </div>
+      <div class="links">
+        <a class="" href="/about">About</a>
+        <a class="" href="/posts">Posts</a>
+        <a class="" href="/projects">Projects</a>
+        <a class="" href="/contact">Contact</a>
+        <a class="" href="/websites">Other Websites</a>
+      </div>
     </div>
   </div>
 </nav>
